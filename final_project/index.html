@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <input type="text" id="locationInput" placeholder="Enter location">
+        <button id="searchButton">Search</button>
+        <div id="message"></div>
+        <div class="fontsize-controls">
+            <span>Font Size:</span>
+            <button id="decreaseFontSize">-</button>
+            <button id="increaseFontSize">+</button>
+            <button id="resetFontSize">Default</button>
+        </div>   
+        <div id="weatherInfo"></div>
+        <div id="map"></div>
+   
+        <button id="modeToggle">
+            <i id="modeIcon" class="fas fa-sun"></i>
+        </button>  
+    </div>
+    <script src="search.js"></script>
+    <script src="map.js"></script>
+    <script src="mode.js"></script>
+    <script src="fontsize.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #1f1f1f;
+    --input-bg-color: #ffffff;
+    --input-text-color: #1f1f1f;
+    --button-bg-color: #007bff;
+    --button-text-color: #f5f5f5;
+    --button-hover-bg-color: #0056b3;
+    --message-error-bg-color: #f2dede;
+    --message-error-text-color: #a94442;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+#weatherInfo {
+    margin-top: 20px;
+}
+
+#map {
+    height: 50vh;
+    min-height: 300px;
+    max-height: 600px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+#message.error {
+    background-color: var(--message-error-bg-color);
+    color: var(--message-error-text-color);
+}
+
+#modeToggle {
+    margin-top: 20px;
+    padding: 8px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#modeToggle:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+#modeIcon {
+    font-size: 1.5rem;
+}
+
+.fontsize-controls {
+    margin-top: 20px;
+}
+
+.fontsize-controls span {
+    margin-right: 10px;
+}
+
+.fontsize-controls button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    margin-right: 5px;
+}
+
+.fontsize-controls button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+body.dark-mode {
+    --bg-color: #1f1f1f;
+    --text-color: #f5f5f5;
+    --input-bg-color: #333333;
+    --input-text-color: #f5f5f5;
+    --button-bg-color: #0062cc;
+    --button-text-color: #f5f5f5;
+    --button-hover-bg-color: #004085;
+    --message-error-bg-color: #d9534f;
+    --message-error-text-color: #1f1f1f;
+}
